@@ -41,7 +41,7 @@ Please check first the _Getting Started_ section which describes how to log on t
   
 **OR** Link to the Tutorial Navigator for example...
 
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
+
 
 **IMPORTANT**
 
