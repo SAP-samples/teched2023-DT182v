@@ -1,6 +1,8 @@
-# Level 1 Heading
+# Create an SAP BTP ABAP Environment Trial User
 
-In this exercise, you will...
+In this exercise, you will create a trial user in the SAP BTP, ABAP Environment. The steps you have to perform have been described in the following tutorial.
+
+[Create an SAP BTP ABAP Environment Trial User](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html)
 
 ## Level 2 Heading
 
