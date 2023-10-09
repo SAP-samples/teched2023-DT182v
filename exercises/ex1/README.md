@@ -1,6 +1,7 @@
-# Exercise 1 - Exercise 1 Description
+# Exercise 1 - Generate an extensible RAP BO
 
-In this exercise, we will create...
+In this exercise, we will generate an extensible RAP BO. Since extending a RAP BO in parallel by several developers can cause severe problems every participant will work with his or her own base RAP BO.
+
 
 ## Exercise 1.1 Sub Exercise 1 Description
 
