@@ -19,33 +19,23 @@ After completing these steps you will have created an extensible RAP Business Ob
 
 ### Adapt include structure
 
-We have to adapt the generated include structure. This is because the XCO libraries currently to not yet support generating some of the needed annations.
+We have to adapt the generated include structure. This is because the XCO libraries currently to not yet support generating some of the annotions that are needed for the include structure used by an extensible entity of an extensible RAP business object.
 
-<pre>
-@EndUserText.label : 'Extension include for Shop'
-@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
-define structure zrap630sshop_05b {
+1. Change the enhancement category such that table gets the category   
 
-  dummy_field : abap.char(1);
+   <pre>
+   @AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
+   </pre>
 
-}
-</pre>
+2. Then add these annotations that are needed in order to make the generated inlcude structure extensible:  
 
-Change the enhancement category such that table gets the category
-
-<pre>
-@AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
-</pre>
-
-Then add these annotations that are needed in order to make the generated inlcude structure extensible: 
-
-<pre>
-@AbapCatalog.enhancement.fieldSuffix : 'ZAA'
-@AbapCatalog.enhancement.quotaMaximumFields : 350
-@AbapCatalog.enhancement.quotaMaximumBytes : 3500
-@AbapCatalog.enhancement.quotaShareCustomer : 50
-@AbapCatalog.enhancement.quotaSharePartner : 50
-</pre>
+   <pre>
+   @AbapCatalog.enhancement.fieldSuffix : 'ZAA'
+   @AbapCatalog.enhancement.quotaMaximumFields : 350
+   @AbapCatalog.enhancement.quotaMaximumBytes : 3500
+   @AbapCatalog.enhancement.quotaShareCustomer : 50
+   @AbapCatalog.enhancement.quotaSharePartner : 50
+   </pre>
 
 The code of the extension include should now look like as follows :
 
