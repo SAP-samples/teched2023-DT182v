@@ -22,15 +22,17 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 
 In this present exercise, you will make yourself familiar with your exercise package **`ZRAP630_###`**, where **###** is your group ID.
 
-This package will contain a generated OData-V4-based UI service, which is provided for this workshop. The UI service is built on top of a managed Business Object (BO) with one entity _Shop_ with generic transactional behavior - i.e. CRUD: Create, Read, Update, and Delete.   
+In the _Getting Started_ section we describe how you get a user in the ABAP Environment of SAP BTP Trial which you will have to use to perform the exercises in this session. 
 
-For your convenience, the class `ZDMO_GEN_RAP6310_SINGLE` is provided to you to generate the package  **`ZRAP630_###`** alongside with the aforementioned RAP business object after execution. 
+In _Exercise 1_ you will generate an extensible managed Business Object (BO) with one entity _Shop_ with generic transactional behavior - i.e. CRUD: Create, Read, Update, and Delete.. For your convenience, the class `ZDMO_GEN_RAP630_SINGLE` is provided to you to generate the package  **`ZRAP630_###`** alongside with the aforementioned RAP business object after execution. 
 
-Please check first the _Getting Started_ section which describes how to log on to the demo system.
+In _Exercise 2_ you will extend base RAP business object that has been generated in exercise 1. You will learn how extend the behavior of the base RAP BEO by validations, determinations and side effects. We will then continue to extend the data model with additional fields. 
+
+Please check first the _Getting Started_ section which describes how to log on to the SAP BTP, ABAP Environment trial system.
 
 - [Getting Started](exercises/ex0/)
-- [Exercise 1 - Generate your ![package](../images/adt_package.png) Package](exercises/ex1/)
-    - [Exercise 1.1 - Run class ZRAP630_](exercises/ex1#exercise-11-sub-exercise-1-description)
+- [Exercise 1 - Create an extensible RAP BO](exercises/ex1/)
+    - [Exercise 1.1 - Run class ZDMO_GEN_RAP630_SINGLE](exercises/ex1#exercise-11-sub-exercise-1-description)
     - [Exercise 1.2 - Maintain missing project settings](exercises/ex1#exercise-12-sub-exercise-2-description)
 - [Exercise 2 - Develop an extension](exercises/ex2/)
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
