@@ -47,6 +47,23 @@ Then add these annotations that are needed in order to make the generated inlcud
 @AbapCatalog.enhancement.quotaSharePartner : 50
 </pre>
 
+The code of the extension include should now look like as follows :
+
+<pre>
+@EndUserText.label : 'Extension include for Shop'
+@AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
+@AbapCatalog.enhancement.fieldSuffix : 'ZAA'
+@AbapCatalog.enhancement.quotaMaximumFields : 350
+@AbapCatalog.enhancement.quotaMaximumBytes : 3500
+@AbapCatalog.enhancement.quotaShareCustomer : 50
+@AbapCatalog.enhancement.quotaSharePartner : 50
+define structure zrap630sshop_### {
+
+  dummy_field : abap.char(1);
+
+}
+</pre>
+
 ### Adapt the table
 
 Open the generated table `zrap630_ashop###` and change the enhancement category to the value `extensible_any`. 
@@ -55,12 +72,73 @@ Open the generated table `zrap630_ashop###` and change the enhancement category 
 @AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
 </pre>
 
+The source code of your table should now read as follows:   
+
+<pre>
+@EndUserText.label : ' Table for entity ZRAP630R_ShopTP_###'
+@AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #NOT_ALLOWED
+define table zrap630_ashop### {
+
+  key mandt             : abap.clnt not null;
+  key order_uuid        : sysuuid_x16 not null;
+  order_id              : ad_persnum;
+  ordered_item          : abap.char(40);
+  currency_code         : abap.cuky;
+  @Semantics.amount.currencyCode : 'zrap630_ashop###.currency_code'
+  order_item_price      : abap.curr(11,2) not null;
+  delivery_date         : abap.dats;
+  overall_status        : abap.char(30);
+  notes                 : abap.char(256);
+  last_changed_at       : abp_lastchange_tstmpl;
+  created_by            : abp_creation_user;
+  created_at            : abp_creation_tstmpl;
+  local_last_changed_by : abp_locinst_lastchange_user;
+  local_last_changed_at : abp_locinst_lastchange_tstmpl;
+  include zrap630sshop_###;
+
+}
+</pre>
+
 ### Adapt the draft table
 
 Perform the same change for the draft table `zrap630sh00d_###` and change the enhancement category to the value `extensible_any`. 
 
 <pre>
 @AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
+</pre>
+
+The source code of your draft table `zrap630sh00d_###` should now read as follows:   
+
+<pre>
+@EndUserText.label : ' Draft table for entity ZRAP630R_ShopTP_###'
+@AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #NOT_ALLOWED
+define table zrap630sh00d_### {
+
+  key mandt          : abap.clnt not null;
+  key orderuuid      : sysuuid_x16 not null;
+  orderid            : ad_persnum;
+  ordereditem        : abap.char(40);
+  currencycode       : abap.cuky;
+  @Semantics.amount.currencyCode : 'zrap630sh00d_###.currencycode'
+  orderitemprice     : abap.curr(11,2);
+  deliverydate       : abap.dats;
+  overallstatus      : abap.char(30);
+  notes              : abap.char(256);
+  lastchangedat      : abp_lastchange_tstmpl;
+  createdby          : abp_creation_user;
+  createdat          : abp_creation_tstmpl;
+  locallastchangedby : abp_locinst_lastchange_user;
+  locallastchangedat : abp_locinst_lastchange_tstmpl;
+  "%admin"           : include sych_bdl_draft_admin_inc;
+  include zrap630sshop_###;
+
+}
 </pre>
 
 ## Summary
