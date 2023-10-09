@@ -141,6 +141,37 @@ define table zrap630sh00d_### {
 }
 </pre>
 
+### Adapt the generated projection view 
+
+Open the generated projection Behavior defintion `ZRAP630C_ShopTP_###`. Here we have to add the statement `use side effects;`. This is because this statement cannot be added by the extension and has to be part of the base business object. 
+
+Unfortunately it will only become possible to generated this code statement in the upcoming _2402-release_ of the ABAP Environment.
+
+The code of the generated projection behavior definition should now read as follows.    
+
+<pre>
+projection;
+strict ( 2 );
+extensible;
+use draft;
+use side effects;
+define behavior for ZRAP630C_ShopTP_### alias Shop
+extensible
+use etag
+
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+}   
+</pre>
+
 ## Summary
 
 You've now ...
