@@ -1,39 +1,67 @@
-# Exercise 2 - Exercise 2 Description
+# Exercise 2 - Extend the extensible RAP BO
 
 In this exercise, we will create...
 
-## Exercise 2.1 Sub Exercise 1 Description
+## Exercise 2.1 - Extend the behavior
 
-After completing these steps you will have created...
+### Exercise 2.1.1 Add validations 
 
-1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
+After completing these steps you will have created a validation to check the delivery date.
 
-2.	Insert this line of code.
 ```abap
-response->set_text( |Hello ABAP World! | ). 
+validation zz_validateDeliverydate on save { create;   field DeliveryDate; }
+
+extend draft determine action Prepare
+  {
+    validation zz_validateDeliveryDate;
+
+  }
+
 ```
 
 
+### Exercise 2.1.2 Add determinations
 
-## Exercise 2.2 Sub Exercise 2 Description
+```abap
+determination ZZ_setOverallStatus on modify {  field OrderedItem; }
+determination ZZ_fillnotes on modify { field overallstatus; }
+```
+
+### Exercise 2.1.3 Add side effects
+
+```abap
+side effects { field OverallStatus affects field Notes ; }
+```
+
+## Exercise 2.2 - Extend the data model
+
+### Exercise 2.2.1 - Add a field to the extension include
+
+```abap
+  zz_feedback_zaa : abap.char(256);
+```
+
+### Exercise 2.2.x - Add extensions for R-view
+### Exercise 2.2.x - Add extensions for i-view
+### Exercise 2.2.x - Add extensions for c-view
+### Exercise 2.2.x - Add extensions for e-view
+### Exercise 2.2.x - Add extensions for draft query view
+
+
+.... 
+
+### Exercise 2.2.x - Add an action and instance feature control
+
+```abap
+field(features : instance) zz_feedback_zaa;
+action(authorization : global,
+//       authorization : instance,
+            features : instance ) ZZ_ProvideFeedback  parameter zabs_feedback result[1] $self;
+```
 
 After completing these steps you will have...
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
-
-```
-
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+### Exercise 2.2.x - Add use statement in projection BDEF
 
 ## Summary
 
