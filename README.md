@@ -20,11 +20,19 @@ The requirements to follow the exercises in this repository are...
 
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
 
+In this present exercise, you will make yourself familiar with your exercise package **`ZRAP630_###`**, where **###** is your group ID.
+
+This package will contain a generated OData-V4-based UI service, which is provided for this workshop. The UI service is built on top of a managed Business Object (BO) with one entity _Shop_ with generic transactional behavior - i.e. CRUD: Create, Read, Update, and Delete.   
+
+For your convenience, the class `ZDMO_GEN_RAP6310_SINGLE` is provided to you to generate the package  **`ZRAP630_###`** alongside with the aforementioned RAP business object after execution. 
+
+Please check first the _Getting Started_ section which describes how to log on to the demo system.
+
 - [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
+- [Exercise 1 - Generate your ![package](../images/adt_package.png) Package](exercises/ex1/)
+    - [Exercise 1.1 - Run class ZRAP630_](exercises/ex1#exercise-11-sub-exercise-1-description)
+    - [Exercise 1.2 - Maintain missing project settings](exercises/ex1#exercise-12-sub-exercise-2-description)
+- [Exercise 2 - Develop an extension](exercises/ex2/)
     - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
     - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
 
