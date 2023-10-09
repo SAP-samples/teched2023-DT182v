@@ -1,10 +1,12 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-DT182v)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-DT182v)
 
-# Session ID - Session Title
+# DT182v - Use ABAP Cloud for developer extensibility
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2022 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2023 session called DT182v - Use ABAP Cloud for developer extensibility.  
+
+In this session you will learn how you can build a RAP extensions to extend existing RAP BOs from other software components or SAP delivered RAP BOs to optimize and adapt their functionality to your specific business requirements.
 
 ## Overview
 
@@ -34,6 +36,10 @@ Start the exercises [here](https://developers.sap.com/tutorials/abap-environment
 **IMPORTANT**
 
 Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
+
+## Online Help
+
+https://help.sap.com/docs/abap-cloud/abap-rap/develop-rap-extensions
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
