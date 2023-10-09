@@ -6,7 +6,7 @@ In this exercise, you will create a trial user in the SAP BTP, ABAP Environment.
 
 If you have not already done so you have first to register for the SAP BTP Trial [here].(https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
 
-## SAP BTP ABAP Environment
+## ABAP Environment in SAP BTP Trial
 
 The steps you you to activate the ABAP Environment in the SAP BTP trial by creating an appropriate user have have been described in the following tutorial.
 
