@@ -4,44 +4,49 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2023 session called DT182v - Use ABAP Cloud for developer extensibility.  
+This repository contains the material for the SAP TechEd 2023 session called _DT182v - Use ABAP Cloud for developer extensibility_.  
 
-In this session you will learn how you can build a RAP extensions to extend existing RAP BOs from other software components or SAP delivered RAP BOs to optimize and adapt their functionality to your specific business requirements.
+Developer extensibility as defined by SAP basically encompasses two activities 
+
+1. Develop custom code to implement your own business logic. Here you can make use of existing API's from SAP that have been released for that purpose.
+2. Extend an existing RAP Business Object delivered by SAP so that additional business functionality is added. Such an extensible RAP business object will usually reside in another software components or it is an existing SAP delivered RAP BO that is extensible. Both can be optimized and their functionality can be adapted to your specific business requirements.
 
 ## Overview
 
-This session introduces attendees to...
+This session introduces attendees to the ABAP Cloud programming model and how this can be leveraged to build extensions (own code) in SAP S/4HANA BTP, ABAP Environment or how you can extend an existing RAP Business Object using the ABAP Cloud programming model.   
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+The requirements to follow the exercises in this repository are:
+
+<!---
+- You have installed the latest version of the ADT tools
+- You ahve created a user in one of the shared SAP BTP, ABAP Environment Trial Systems
+-->
+
+> ** SAP internal links** 
+> - You have installed the latest version of ADT tools. These you can find SAP internally here: https://adt.only.sap/   
+> - You have downloaded the service key for the demo system **Y08**. See also the [Getting Started](exercises/ex0/) section.   
+
 
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
+In the _Getting Started_ section we describe how you get a user in the ABAP Environment of SAP BTP Trial which you will have to use to perform the exercises in this session. After you have created this trial user you will will an ABAP Cloud project to connect or your trial instance. Here you will generate an extensible managed Business Object (BO) with one entity _Shop_ with generic transactional behavior - i.e. CRUD: Create, Read, Update, and Delete. For your convenience, the class `ZDMO_GEN_RAP630_SINGLE` is provided to you to generate the package  **`ZRAP630_###`** alongside with the aforementioned RAP business object after execution.
 
-In this present exercise, you will make yourself familiar with your exercise package **`ZRAP630_###`**, where **###** is your group ID.
+In _Exercise 1_ you will learn how to levrage the released RAP BO `I_BankTP` . 
 
-In the _Getting Started_ section we describe how you get a user in the ABAP Environment of SAP BTP Trial which you will have to use to perform the exercises in this session. 
+In _Exercise 2_ you will _extend the behavior_ of the base RAP business object that has been generated at the end of the Getting Started section. You will learn how extend the behavior of the base RAP BEO by validations, determinations and side effects. 
 
-In _Exercise 1_ you will generate an extensible managed Business Object (BO) with one entity _Shop_ with generic transactional behavior - i.e. CRUD: Create, Read, Update, and Delete.. For your convenience, the class `ZDMO_GEN_RAP630_SINGLE` is provided to you to generate the package  **`ZRAP630_###`** alongside with the aforementioned RAP business object after execution. 
+In _Exercise 3_ you will then continue to _extend the data model_ with additional fields. This requires you to perform several steps and you have to create quite a lot of repository objects. (There is a plan to provide a Generator for that.)
 
-In _Exercise 2_ you will extend base RAP business object that has been generated in exercise 1. You will learn how extend the behavior of the base RAP BEO by validations, determinations and side effects. We will then continue to extend the data model with additional fields. 
 
-Please check first the _Getting Started_ section which describes how to log on to the SAP BTP, ABAP Environment trial system.
+So let us start and have a look at the _Getting Started_ section.
 
 - [Getting Started](exercises/ex0/)
-- [Exercise 1 - Create an extensible RAP BO](exercises/ex1/)
-    - [Exercise 1.1 - Run class ZDMO_GEN_RAP630_SINGLE](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Maintain missing project settings](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Develop an extension](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
-
-  
-**OR** Link to the Tutorial Navigator for example...
-
-
+- [Exercise 1 - Consume a released RAP BO](exercises/ex1/)
+- [Exercise 2 - Extend the behavior (determinations, validations, side-effects)](exercises/ex2/)
+- [Exercise 3 - Extend the data model (add additional fields)](exercises/ex3/)
+- [Exercise 4 - Extend the data model (add an action)](exercises/ex4/)
 
 **IMPORTANT**
 
@@ -50,6 +55,7 @@ Your repo must contain the .reuse and LICENSES folder and the License section be
 ## Online Help
 
 https://help.sap.com/docs/abap-cloud/abap-rap/develop-rap-extensions
+https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/1b345c53060846b091f55ea901e21ae7.html
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
