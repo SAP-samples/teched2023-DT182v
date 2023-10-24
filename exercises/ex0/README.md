@@ -1,17 +1,5 @@
 # Getting started
 
-> **SAP internally** we will run this workshop on the test system **Y08**. 
->
-> https://github.wdf.sap.corp/Steampunk/auto-testing/wiki/Y08
-> On the Wiki above you will find the service key you need to create an ABAP Cloud project in ADT.
-> 
-> You can log on to the system eitehr by using your personalized user (members of Harald Kuck's organization get such a user automatically) or
-> by using the standard developer user that has the following credentials:
->
-> **developer@example.com / Welcome1!**
-
-<!---
-
 In this exercise, you will 
 
 1. Create a SAP BTP trial account
@@ -28,7 +16,6 @@ The steps to activate the ABAP Environment in the SAP BTP trial by creating an a
 
 [Create an SAP BTP ABAP Environment Trial User](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html)
 
--->
 
 ## Use class ZDMO_GEN_RAP630_SINGLE to generate your starter project
 
