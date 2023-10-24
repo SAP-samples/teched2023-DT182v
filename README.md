@@ -29,11 +29,13 @@ as described in our [Getting Started](exercises/ex0/) section.
 
 In the _Getting Started_ section we describe how you get a user in the ABAP Environment of SAP BTP Trial which you will have to use to perform the exercises in this session. After you have created this trial user you will will an ABAP Cloud project to connect or your trial instance. Here you will generate an extensible managed Business Object (BO) with one entity _Shop_ with generic transactional behavior - i.e. CRUD: Create, Read, Update, and Delete. For your convenience, the class **`ZDMO_GEN_RAP630_SINGLE`** is provided to you to generate the package  **`ZRAP630_###`** alongside with the aforementioned RAP business object after execution.
 
-In _Exercise 1_ you will learn how to levrage the released RAP BO `I_BankTP` . 
+In _Exercise 1_ you will learn how to leverage the released RAP BO `I_BankTP` . 
 
 In _Exercise 2_ you will _extend the behavior_ of the base RAP business object that has been generated at the end of the Getting Started section. You will learn how extend the behavior of the base RAP BEO by validations, determinations and side effects. 
 
-In _Exercise 3_ you will then continue to _extend the data model_ with additional fields. This requires you to perform several steps and you have to create quite a lot of repository objects. (There is a plan to provide a Generator for that.)
+In _Exercise 3_ you will then continue to _extend the data model_ with additional fields. This requires you to perform several steps and you have to create quite a lot of repository objects. (There is a plan to provide a Generator for that.)  
+
+In _Exercise 4_ you will continue to _extend the behavior_ of the base RAP business object by adding an action. Since actions can only added via an extension to fields that have been added via an extension as well, adding an action via an extension must be performed after Exercise 3.   
 
 
 So let us start and have a look at the _Getting Started_ section.
@@ -42,7 +44,7 @@ So let us start and have a look at the _Getting Started_ section.
 - [Exercise 1 - Consume a released RAP BO](exercises/ex1/)
 - [Exercise 2 - Extend the behavior (determinations, validations, side-effects)](exercises/ex2/)
 - [Exercise 3 - Extend the data model (add additional fields)](exercises/ex3/)
-- [Exercise 4 - Extend the data model (add an action)](exercises/ex4/)
+- [Exercise 4 - Extend the behavior model (add an action)](exercises/ex4/)
 
 **IMPORTANT**
 
