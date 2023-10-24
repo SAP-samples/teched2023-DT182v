@@ -44,7 +44,7 @@ So let us start and have a look at the _Getting Started_ section.
 - [Exercise 1 - Consume a released RAP BO](exercises/ex1/)
 - [Exercise 2 - Extend the behavior (determinations, validations, side-effects)](exercises/ex2/)
 - [Exercise 3 - Extend the data model (add additional fields)](exercises/ex3/)
-- [Exercise 4 - Extend the behavior model (add an action)](exercises/ex4/)
+- [Exercise 4 - Extend the behavior (add an action)](exercises/ex4/)
 
 **IMPORTANT**
 
