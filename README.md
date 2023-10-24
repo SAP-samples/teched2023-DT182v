@@ -19,15 +19,8 @@ This session introduces attendees to the ABAP Cloud programming model and how th
 
 The requirements to follow the exercises in this repository are:
 
-<!---
-- You have installed the latest version of the ADT tools
-- You ahve created a user in one of the shared SAP BTP, ABAP Environment Trial Systems
--->
-
-> ** SAP internal links** 
-> - You have installed the latest version of ADT tools. These you can find SAP internally here: https://adt.only.sap/   
-> - You have downloaded the service key for the demo system **Y08**. See also the [Getting Started](exercises/ex0/) section.   
-
+- You have installed the latest version of the ADT tools as described in this tutorial [Download the Eclipse IDE and add the ABAP Development Tools (ADT) Plugin](https://developers.sap.com/tutorials/abap-install-adt.html). 
+- You have created a user in one of the shared SAP BTP, ABAP Environment Trial Systems as described in this tutorial [Create an SAP BTP ABAP Environment Trial User](https://developers.sap.com/mission.abap-env-trial-user.html).   
 
 ## Exercises
 
