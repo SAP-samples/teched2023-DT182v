@@ -382,7 +382,7 @@ After having extended all the objects in the hiearchy of your base RAP business 
   ![extended object page](images/ex3_new_field_feedback_020.png)   
   
   
-  > When no field is visible you should check the $metadata extension.   
+  > When no field is visible you should check the extension of your projection view `ZRAP630C_EXT_SHOPTP_###` and check the UI annotations.   
   
   
 </details>
