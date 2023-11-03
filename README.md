@@ -25,7 +25,7 @@ The requirements to follow the exercises in this repository are:
 as described in our [Getting Started](exercises/ex0/) section.   
 
 ## Slides
-[Presentation](../slid) 
+[Presentation](https://github.com/SAP-samples/teched2023-DT182v/blob/5468676ccceadbda6e9b16432f12194a7de3eb39/slides/AD182v%40SAP_TechEd_2023_final_RAP_Extensibility_JS.pdf) 
 
 ## Exercises
 
