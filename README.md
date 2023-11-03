@@ -24,6 +24,8 @@ The requirements to follow the exercises in this repository are:
 
 as described in our [Getting Started](exercises/ex0/) section.   
 
+## Slides
+[Presentation](../slid) 
 
 ## Exercises
 
